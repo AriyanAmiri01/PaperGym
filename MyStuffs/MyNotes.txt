@@ -1,0 +1,30 @@
+Spring Boot Application
+│
+├── HTTP-driven work
+│   └── Controller methods
+│
+├── Scheduled work
+│   └── Run every hour/day/etc.
+│
+├── Startup work
+│   └── Run when application starts
+│
+├── Background / asynchronous work
+│   └── Run independently of an HTTP request
+│
+├── Event-driven work
+│   └── React when some event occurs
+│
+└── External message-driven work
+    └── Kafka / RabbitMQ / queues / etc.
+
+
+
+======
+Irreversable passwords, 
+Different algorithms for using them
+preimage
+
+
+
+In Spring Boot, a JPA Entity is a Java class that represents a table in a relational database.
