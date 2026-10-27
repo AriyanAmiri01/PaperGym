@@ -7,33 +7,33 @@ allowing a user to authenticate against user data stored in PostgreSQL.
 1. Frontend
    - [X] Basic index page
    - [X] Basic login/authentication page
+        - Two forms for receiving username and password
    - [X] Basic CSS/layout
    - [X] Basic JavaScript for making requests to the backend
-   - [ ] Display authentication result / basic user information
+        - For Login and Register request to the server
+   - [X] Display authentication result / basic user information on the console
 
 2. Backend
    - [X] Basic GET request handling with controllers
    - [X] Basic POST request handling
-   - [ ] Basic authentication logic
-   - [ ] PostgreSQL connection
-   - [ ] Repository for accessing user data
-   - [ ] Appropriate HTTP responses for success/failure
+   - [X] User entity/model
+   - [X] Basic authentication logic
+        - Simple but not complete username and password validation
+
+   - [X] PostgreSQL connection
+   - [X] Repository for accessing user data
+   - [X] Appropriate HTTP responses for success/failure
 
 3. Database
-   - [ ] Users table / relevant user entity
-   - [ ] User identifier
-   - [ ] Username/email
-   - [ ] Password representation
-   - [ ] Basic queries for retrieving users
-   - [ ] Seed/test users
+   - [X] Users table / relevant user entity
+   - [X] User identifier
+   - [X] Username/password
+   - [X] Password representation
+   - [X] Basic queries for retrieving users
+   - [X] Seed/test users
+        - Done with username Ariyano and password 12345678
 
-4. Integration
-   - [ ] Browser can request the index page
-   - [ ] Browser can open the login page
-   - [ ] Login form sends credentials to Spring Boot
-   - [ ] Spring Boot queries PostgreSQL
-   - [ ] Backend returns authentication result
-   - [ ] Frontend reacts to the result
+
 
 
 #===========================================================================#
