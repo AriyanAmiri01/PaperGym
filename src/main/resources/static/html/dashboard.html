@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Ariya Gym</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <script src="../script/script.js" defer></script>
+</head>
+
+<body>
+<!-- Sidebar -->
+<div class="nav-backdrop" id="navBackdrop"></div>
+<aside class="sidebar" id="sidebar">
+
+    <button
+            class="sidebar-tab"
+            id="sidebarTab"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+    >
+        <span class="sidebar-icon">☰</span>
+    </button>
+
+    <div class="sidebar-content">
+
+        <a href="/" class="sidebar-brand">
+            <span>PAPER</span>
+            <span>GYM</span>
+        </a>
+
+        <nav class="sidebar-nav">
+            <a href="/">Home</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="sidebar-user-area">
+
+            <!-- Authenticated state -->
+            <div class="sidebar-user sidebar-user--authenticated">
+
+                <div class="sidebar-profile">
+                    <div class="profile-avatar">
+                        A
+                    </div>
+
+                    <div class="profile-info">
+                        <strong>Alex</strong>
+                        <span>Member</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-user-links">
+                    <a href="#">
+                        Profile
+                        <span>→</span>
+                    </a>
+
+                    <button type="button">
+                        Log out
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Guest state -->
+            <div class="sidebar-user sidebar-user--guest hidden">
+
+                <div class="sidebar-profile">
+                    <div class="profile-avatar profile-avatar--guest">
+                        ?
+                    </div>
+
+                    <div class="profile-info">
+                        <strong>Guest</strong>
+                        <span>Not signed in</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-user-links">
+                    <a href="/login.html">
+                        Log in
+                        <span>→</span>
+                    </a>
+
+                    <a href="/register.html" class="secondary-action">
+                        Create account
+                        <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+
+<!-- ===================================================
+     DASHBOARD
+==================================================== -->
+
+<main class="dashboard">
+
+
+    <!-- HERO -->
+    <section class="section dashboard-hero">
+        <p class="title-eyebrow-section">
+            Member Dashboard
+        </p>
+        <h1 class="title-section">
+            Welcome back,<br>
+            Ariyano
+        </h1>
+        <p class="title-tagline-section">
+            Your training overview.
+        </p>
+    </section>
+
+
+
+    <!-- PROFILE -->
+    <section class="section dashboard-profile-section">
+
+        <div class="dashboard-profile">
+
+            <div class="dashboard-profile-avatar">
+                A
+            </div>
+
+
+            <div class="dashboard-profile-info">
+
+                    <span class="type-label-1">
+                        Member
+                    </span>
+
+                <h2>
+                    Ariyano
+                </h2>
+
+                <p>
+                    @Ariyano
+                </p>
+
+                <span class="dashboard-status">
+                        Active Membership
+                    </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- OVERVIEW -->
+
+    <section class="section">
+
+        <p class="title-eyebrow-section">
+            Overview
+        </p>
+
+
+        <div class="dashboard-stats">
+
+
+            <article class="dashboard-stat">
+
+                    <span class="type-label-1">
+                        Membership
+                    </span>
+
+                <strong>
+                    Active
+                </strong>
+
+                <p>
+                    Standard membership
+                </p>
+
+            </article>
+
+
+
+            <article class="dashboard-stat">
+
+                    <span class="type-label-1">
+                        Visits
+                    </span>
+
+                <strong>
+                    12
+                </strong>
+
+                <p>
+                    This month
+                </p>
+
+            </article>
+
+
+
+            <article class="dashboard-stat">
+
+                    <span class="type-label-1">
+                        Program
+                    </span>
+
+                <strong>
+                    Strength
+                </strong>
+
+                <p>
+                    Four days per week
+                </p>
+
+            </article>
+
+
+
+            <article class="dashboard-stat">
+
+                    <span class="type-label-1">
+                        Next Workout
+                    </span>
+
+                <strong>
+                    Push
+                </strong>
+
+                <p>
+                    Chest, shoulders and triceps
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <section class="section">
+
+        <div class="dashboard-content">
+
+
+            <!-- CURRENT PROGRAM -->
+
+            <article class="dashboard-panel">
+
+                <p class="title-eyebrow-section">
+                    Training
+                </p>
+
+                <h2 class="type-h-1">
+                    Current Program
+                </h2>
+
+
+                <div class="dashboard-program">
+
+
+                    <div class="dashboard-program-item">
+
+                            <span>
+                                01
+                            </span>
+
+                        <div>
+
+                            <strong>
+                                Push
+                            </strong>
+
+                            <p>
+                                Chest, shoulders and triceps
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="dashboard-program-item">
+
+                            <span>
+                                02
+                            </span>
+
+                        <div>
+
+                            <strong>
+                                Pull
+                            </strong>
+
+                            <p>
+                                Back and biceps
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="dashboard-program-item">
+
+                            <span>
+                                03
+                            </span>
+
+                        <div>
+
+                            <strong>
+                                Legs
+                            </strong>
+
+                            <p>
+                                Quadriceps, hamstrings and calves
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="dashboard-program-item">
+
+                            <span>
+                                04
+                            </span>
+
+                        <div>
+
+                            <strong>
+                                Upper
+                            </strong>
+
+                            <p>
+                                General upper-body training
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </article>
+
+
+
+            <!-- RECENT ACTIVITY -->
+
+            <article class="dashboard-panel">
+
+                <p class="title-eyebrow-section">
+                    Activity
+                </p>
+
+                <h2 class="type-h-1">
+                    Recent Visits
+                </h2>
+
+
+                <div class="dashboard-table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                        <tr>
+
+                            <th>
+                                Date
+                            </th>
+
+                            <th>
+                                Workout
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                        </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                        <tr>
+
+                            <td>
+                                28 October
+                            </td>
+
+                            <td>
+                                Push
+                            </td>
+
+                            <td>
+                                Completed
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                26 October
+                            </td>
+
+                            <td>
+                                Pull
+                            </td>
+
+                            <td>
+                                Completed
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                24 October
+                            </td>
+
+                            <td>
+                                Legs
+                            </td>
+
+                            <td>
+                                Completed
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                22 October
+                            </td>
+
+                            <td>
+                                Upper
+                            </td>
+
+                            <td>
+                                Completed
+                            </td>
+
+                        </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ===================================================
+     FOOTER
+==================================================== -->
+
+<footer class="footer">
+
+    <div class="footer-main">
+
+        <a href="/" class="footer-brand">
+
+                <span>
+                    ARIYA
+                </span>
+
+            <span>
+                    GYM
+                </span>
+
+        </a>
+
+
+        <div class="footer-links">
+
+            <a href="/">
+                Home
+            </a>
+
+            <a href="/dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="/login.html">
+                Login
+            </a>
+
+            <a href="/register.html">
+                Register
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <a href="#">
+            © 2026 Ariya Gym
+        </a>
+
+    </div>
+
+</footer>
+
+
+
+<script src="/js/main.js"></script>
+
+</body>
+
+</html>

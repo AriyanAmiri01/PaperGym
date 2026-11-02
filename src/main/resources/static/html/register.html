@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paper Gym</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/register.css">
+
+    <script src="../script/script.js" defer></script>
+    <script src="../script/index.js" defer></script>
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="nav-backdrop" id="navBackdrop"></div>
+<aside class="sidebar" id="sidebar">
+
+    <button
+            class="sidebar-tab"
+            id="sidebarTab"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+    >
+        <span class="sidebar-icon">☰</span>
+    </button>
+
+    <div class="sidebar-content">
+
+        <a href="/" class="sidebar-brand">
+            <span>PAPER</span>
+            <span>GYM</span>
+        </a>
+
+        <nav class="sidebar-nav">
+            <a href="/">Home</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="sidebar-user-area">
+
+            <!-- Authenticated state -->
+            <div class="sidebar-user sidebar-user--authenticated">
+
+                <div class="sidebar-profile">
+                    <div class="profile-avatar">
+                        A
+                    </div>
+
+                    <div class="profile-info">
+                        <strong>Alex</strong>
+                        <span>Member</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-user-links">
+                    <a href="#">
+                        Profile
+                        <span>→</span>
+                    </a>
+
+                    <button type="button">
+                        Log out
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Guest state -->
+            <div class="sidebar-user sidebar-user--guest hidden">
+
+                <div class="sidebar-profile">
+                    <div class="profile-avatar profile-avatar--guest">
+                        ?
+                    </div>
+
+                    <div class="profile-info">
+                        <strong>Guest</strong>
+                        <span>Not signed in</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-user-links">
+                    <a href="/login.html">
+                        Log in
+                        <span>→</span>
+                    </a>
+
+                    <a href="/register.html" class="secondary-action">
+                        Create account
+                        <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</aside>
+
+<main class="grid-double-column">
+
+    <section class="flex-single-vertical">
+        <p class="section-title-eyebrow">
+            Strength • Discipline • Progress
+        </p>
+        <h1 class="title-logo">
+            <span>PAPER</span>
+            <span>GYM.</span>
+        </h1>
+    </section>
+
+    <section class="section-auth">
+
+
+        <div class="auth-form-container">
+
+            <span class="auth-index">02 / REGISTER</span>
+            <div class="auth-heading">
+                <h1>JOIN THE<br>GYM.</h1>
+                <p>Create your account and start tracking your progress.</p>
+            </div>
+
+            <form class="auth-form">
+                <div class="auth-form-field">
+                    <label for="username">Username</label>
+
+                    <input
+                            id="username"
+                            name="username"
+                            type="text"
+                            placeholder="Choose a username"
+                    >
+                </div>
+
+                <div class="auth-form-field">
+                    <label for="email">Email</label>
+
+                    <input
+                            id="email"
+                            name="email"
+                            type="email"
+                            placeholder="you@example.com"
+                    >
+                </div>
+
+                <div class="auth-form-field">
+                    <label for="password">Password</label>
+
+                    <input
+                            id="password"
+                            name="password"
+                            type="password"
+                            placeholder="Create a password"
+                    >
+                </div>
+
+                <div class="auth-form-field">
+                    <label for="confirm-password">Confirm password</label>
+
+                    <input
+                            id="confirm-password"
+                            name="confirmPassword"
+                            type="password"
+                            placeholder="Repeat your password"
+                    >
+                </div>
+                <div class="auth-form-field">
+                    <div class="form-message form-message--error hidden">
+                        Something went wrong. Please check your information.
+                    </div>
+                </div>
+                <div class="auth-form-field">
+                    <button class="button-1" type="button">
+                        <span>Create account</span>
+                        <span>→</span>
+                    </button>
+                </div>
+
+            </form>
+
+            <div class="auth-switch">
+                <span>Already have an account?</span>
+                <a class="link-1" href="/login.html">Log in →</a>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

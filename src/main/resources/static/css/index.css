@@ -1,8 +1,110 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
+
+
+
+/***************************************************
+*   HERO SECTION
+***************************************************/
+.hero {
+    position: relative;
+
+    min-height: 100vh;
+    padding: 80px 8vw;
+
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+    background: var(--color-beige1);
+    color: var(--color-black);
+
+}
+.hero-content {
+    width: 100%;
 }
 
-h1 {
-    font-size: 32px;
+
+
+
+
+
+
+/***************************************************
+*   ABOUT SECTION
+***************************************************/
+.about {
+    background: var(--color-slateblue);
+    color: var(--color-white);
 }
+
+
+/***************************************************
+*   FEATURE SECTION
+***************************************************/
+.features {
+    background: var(--color-beige1);
+    color: var(--color-black);
+}
+.features-intro {
+    margin-bottom: 64px;
+}
+
+
+
+
+/***************************************************
+*   CONTACT SECTION
+***************************************************/
+.contact {
+    background: var(--color-beige2);
+    color: var(--color-black);
+}
+
+
+
+
+.contact-details p{
+    color: var(--color-slateblue);
+    line-height: 1.6;
+    text-decoration: none;
+}
+.contact-details a {
+    color: var(--color-slateblue);
+    line-height: 1.6;
+    text-decoration: none;
+}
+.contact-details a:hover {
+    color: var(--color-slatered);
+}
+.contact-label {
+    display: block;
+    color: var(--color-slatered);
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+.contact .contact-details {
+    display: flex;
+    flex-direction: column;
+}
+.contact .contact-details span {
+    margin-top: 20px;
+}
+
+
+
+/**/
+
+
+
+
+
+.contact-form {
+    width: 100%;
+}
+
+
+
+
+
+
+

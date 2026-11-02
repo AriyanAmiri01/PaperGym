@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paper Gym</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+    <script src="../script/script.js" defer></script>
+    <script src="../script/index.js" defer></script>
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div class="nav-backdrop" id="navBackdrop"></div>
+<aside class="sidebar" id="sidebar">
+
+    <button
+            class="sidebar-tab"
+            id="sidebarTab"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+    >
+        <span class="sidebar-icon">☰</span>
+    </button>
+
+    <div class="sidebar-content">
+
+        <a href="/" class="sidebar-brand">
+            <span>PAPER</span>
+            <span>GYM</span>
+        </a>
+
+        <nav class="sidebar-nav">
+            <a href="/">Home</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="sidebar-user-area">
+
+            <!-- Authenticated state -->
+            <div class="sidebar-user sidebar-user--authenticated">
+
+                <div class="sidebar-profile">
+                    <div class="profile-avatar">
+                        A
+                    </div>
+
+                    <div class="profile-info">
+                        <strong>Alex</strong>
+                        <span>Member</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-user-links">
+                    <a href="#">
+                        Profile
+                        <span>→</span>
+                    </a>
+
+                    <button type="button">
+                        Log out
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Guest state -->
+            <div class="sidebar-user sidebar-user--guest hidden">
+
+                <div class="sidebar-profile">
+                    <div class="profile-avatar profile-avatar--guest">
+                        ?
+                    </div>
+
+                    <div class="profile-info">
+                        <strong>Guest</strong>
+                        <span>Not signed in</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-user-links">
+                    <a href="/login.html">
+                        Log in
+                        <span>→</span>
+                    </a>
+
+                    <a href="/register.html" class="secondary-action">
+                        Create account
+                        <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+<main class="grid-double-column">
+
+    <section class="flex-single-vertical section">
+        <p class="section-title-eyebrow">
+            Strength • Discipline • Progress
+        </p>
+        <h1 class="title-logo">
+            <span>PAPER</span>
+            <span>GYM.</span>
+        </h1>
+    </section>
+
+    <section class="section-auth flex-single-vertical">
+
+        <div class="auth-form-container">
+            <span class="auth-index">01 / LOGIN</span>
+
+            <div class="auth-heading">
+                <h1>
+                    WELCOME<br>
+                    BACK.
+                </h1>
+                <p>Sign in to continue to your account.</p>
+            </div>
+
+            <form class="auth-form">
+
+                <div class="auth-form-field">
+                    <label for="username">Username</label>
+                    <input
+                            id="username"
+                            name="username"
+                            type="text"
+                            placeholder="Your username"
+                    >
+                </div>
+
+                <div class="auth-form-field">
+                    <label for="password">Password</label>
+
+                    <input
+                            id="password"
+                            name="password"
+                            type="password"
+                            placeholder="Your password"
+                    >
+                </div>
+
+                <div class="form-message form-message--error hidden">
+                    Invalid username or password.
+                </div>
+
+                <button class="button-1" type="button">
+                    <span>Log in</span>
+                    <span>→</span>
+                </button>
+
+            </form>
+
+            <div class="auth-switch">
+                <span>Don't have an account?</span>
+                <a class="link-1" href="/register.html">Create one →</a>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>

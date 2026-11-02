@@ -37,3 +37,55 @@ allowing a user to authenticate against user data stored in PostgreSQL.
 
 
 #===========================================================================#
+
+
+
+Stage02 - Frontend and graphic enhancement
+
+@Objective: Build a sexy looking static frontend shell for our application
+including some main pages, hopefully a good navigation system, a style that
+does not look like shit, some forms that will come handy later.
+
+Constraints:
+- No backend integration yet.
+- Use IntelliJ Live Edit/preview workflow during development.
+- Avoid unnecessary informational pages.
+- Links/forms without implemented functionality may currently do nothing.
+- Prefer reusable CSS/JS over page-specific implementations.
+
+1. Frontend
+    -[X]: 1. Global UI Foundation
+        - [X] Color palette
+        - [X] Typography
+        - [X] Buttons
+        - [X] Cards
+        - [X] Forms
+        - [X] Temporary table styling
+        - [X] Error / warning / success messages
+        - [X] General layout/container system
+        - [ ] Reusable fade/entrance animation
+    - [X]: 2. Index page:
+        - [X] Hero / introduction
+        - [X] Short gym description
+        - [X] Selected feature/content section
+        - [X] Contact section
+        - [X] Footer
+    - [X]: 3. Navigation system
+        - [X] Hamburger button
+        - [X] Sliding sidebar
+        - [X] Backdrop / click-to-close
+        - [!] Optional drag-to-close
+        - [X] Essential navigation links
+        - User area:
+        - [X] Profile preview
+        - [X] Logout control
+        - [X] Dummy unauthenticated profile state
+        - [X] Authentication-page link
+    - [X]: 4. Authentication UI
+        - [X] Login page/form
+        - [X] Registration page/form
+        - [X] Error-message placeholders
+    - [X]: 5. Dashboard Shell
+        - [X] Basic dashboard layout
+        - [X] Dummy user information
+        - [X] Placeholder cards/sections for future backend features

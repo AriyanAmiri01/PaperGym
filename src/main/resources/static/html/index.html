@@ -3,20 +3,302 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Gym Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/css/index.css">
-    <script src="/script/index.js" defer></script>
+    <title>Paper Gym</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <script src="../script/script.js" defer></script>
+    <script src="../script/index.js" defer></script>
+    <script src="../script/card-1-script.js" defer></script>
+
 </head>
 
 <body>
 
-<h1>Gym Application</h1>
+<!-- Sidebar -->
+<div class="nav-backdrop" id="navBackdrop"></div>
+<aside class="sidebar" id="sidebar">
 
-<p>Welcome to our gym application.</p>
+    <button
+            class="sidebar-tab"
+            id="sidebarTab"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+    >
+        <span class="sidebar-icon">☰</span>
+    </button>
 
-<button id="test-button">Test JavaScript</button>
+    <div class="sidebar-content">
+
+        <a href="/" class="sidebar-brand">
+            <span>PAPER</span>
+            <span>GYM</span>
+        </a>
+
+        <nav class="sidebar-nav">
+            <a href="/">Home</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="sidebar-user-area">
+
+            <!-- Authenticated state -->
+            <div class="sidebar-user sidebar-user--authenticated">
+
+                <div class="sidebar-profile">
+                    <div class="profile-avatar">
+                        A
+                    </div>
+
+                    <div class="profile-info">
+                        <strong>Alex</strong>
+                        <span>Member</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-user-links">
+                    <a href="#">
+                        Profile
+                        <span>→</span>
+                    </a>
+
+                    <button type="button">
+                        Log out
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Guest state -->
+            <div class="sidebar-user sidebar-user--guest hidden">
+
+                <div class="sidebar-profile">
+                    <div class="profile-avatar profile-avatar--guest">
+                        ?
+                    </div>
+
+                    <div class="profile-info">
+                        <strong>Guest</strong>
+                        <span>Not signed in</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-user-links">
+                    <a href="/login.html">
+                        Log in
+                        <span>→</span>
+                    </a>
+
+                    <a href="/register.html" class="secondary-action">
+                        Create account
+                        <span>→</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</aside>
+
+
+<!-- Main -->
+<main>
+    <section class="hero">
+        <!-- 1. Index -->
+        <div class="index-eyebrow-section text-color-black">
+            <span>01</span>
+            <span>Hero</span>
+        </div>
+
+        <!-- 2. Section -->
+        <div class="hero-content">
+            <p class="title-eyebrow-section">
+                Strength • Discipline • Progress
+            </p>
+
+            <h1 class="title-logo">
+                <span>PAPER</span>
+                <span>GYM.</span>
+            </h1>
+
+            <p class="title-tagline-section">
+                Build strength.<br>
+                On paper. In practice.
+            </p>
+
+            <a href="#about" class="button-1">
+                Explore the gym
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section class="section about" id="about">
+        <!-- 1. Index -->
+        <div class="index-eyebrow-section text-color-beige">
+            <span>02</span>
+            <span>About</span>
+        </div>
+
+        <!-- 2. Section -->
+        <div class="grid-double-column-2">
+            <h2 class="title-section">MORE THAN<br>JUST A GYM.</h2>
+
+            <div class="description-section">
+                <p>
+                    Paper Gym is built around consistent training,
+                    clear goals, and measurable progress.
+                </p>
+                <p>
+                    A place to train with purpose, improve over time,
+                    and keep moving forward.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section features">
+        <div class="index-eyebrow-section text-color-black">
+            <span>03</span>
+            <span>Training</span>
+        </div>
+        <div class="grid-double-column-2 features-intro">
+            <h2 class="title-section">TRAIN WITH<br>PURPOSE.</h2>
+            <div class="description-section">
+                <p>Everything you need to build strength, track progress, and stay consistent.</p>
+            </div>
+        </div>
+        <div class="grid-triple-column">
+
+            <article class="card-1">
+                <span class="feature-number">01</span>
+
+                <div class="card-1-content">
+                    <h3 class="type-h-1">Strength</h3>
+                    <p class="type-p-1">Equipment and space designed for focused, progressive strength training.</p>
+                </div>
+            </article>
+
+            <article class="card-1">
+                <span class="feature-number">02</span>
+
+                <div class="card-1-content">
+                    <h3 class="type-h-1">Progress</h3>
+                    <p class="type-p-1">Set goals, follow your training, and make improvement something you can measure.</p>
+                </div>
+            </article>
+
+            <article class="card-1 card-1-accent">
+                <span class="text-color-white">03</span>
+
+                <div class="text-color-white">
+                    <h3 class="type-h-1">Consistency</h3>
+                    <p class="type-p-1">Build routines that turn individual workouts into long-term results.</p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <section class="section contact" id="contact">
+        <div class="index-eyebrow-section text-color-black">
+            <span>04</span>
+            <span>Contact</span>
+        </div>
+        <div class="grid-double-column">
+            <div class="flex-single-vertical">
+                    <h2 class="title-section">READY TO<br>START?</h2>
+                    <div class="contact-details">
+                        <span class="type-label-1">Location</span>
+                        <p class="type-p-1">123 Paper Street<br>Example City</p>
+                        <span class="type-label-1">Email</span>
+                        <a class="type-a-1">mailto:hello@papergym.example"> hello@papergym.example</a>
+                        <span class="type-label-1">Hours</span>
+                        <p class="type-p-1">Mon — Fri&nbsp;&nbsp;06:00 — 23:00<br>Sat — Sun&nbsp;&nbsp;08:00 — 21:00</p>
+                    </div>
+            </div>
+
+
+            <div>
+                <form class="form-1 contact-form" action="/api/contact" method="post">
+
+                    <label for="name">Name</label>
+                    <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            required
+                    >
+                    <label for="email">Email</label>
+                    <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            required
+                    >
+                    <label for="subject">Subject</label>
+                    <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            required
+                    >
+                    <label for="message">Message</label>
+                    <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            required
+                    ></textarea>
+
+
+                    <button type="submit">
+                        Send message
+                        <span>→</span>
+                    </button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer ">
+
+        <div class="footer-main">
+
+            <a href="/" class="footer-brand">
+                <span>PAPER</span>
+                <span>GYM</span>
+            </a>
+
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="/login.html">Log in</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 Paper Gym</span>
+            <a href="#">Back to top ↑</a>
+        </div>
+
+    </footer>
+</main>
 
 </body>
-
 </html>

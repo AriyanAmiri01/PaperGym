@@ -1,0 +1,164 @@
+/***************************************************
+*   DASHBOARD
+***************************************************/
+
+.dashboard-hero {
+    min-height: 65vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* PROFILE */
+
+.dashboard-profile-section {
+    min-height: auto;
+
+    background: var(--color-slateblue);
+    color: var(--color-white);
+}
+
+.dashboard-profile {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.dashboard-profile-avatar {
+    width: 100px;
+    height: 100px;
+
+    flex-shrink: 0;
+
+    display: grid;
+    place-items: center;
+
+    background: var(--color-slatered);
+    border-radius: 50%;
+
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.dashboard-profile-info h2 {
+    font-size: 32px;
+    line-height: 1.1;
+}
+
+.dashboard-profile-info p {
+    color: var(--color-gray);
+}
+
+.dashboard-status {
+    display: inline-block;
+
+    margin-top: 16px;
+    padding: 6px 12px;
+
+    border: 1px solid var(--color-success);
+
+    color: var(--color-white);
+
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+
+/* STATISTICS */
+
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 2px;
+
+    background: var(--color-slateblue);
+}
+
+.dashboard-stat {
+    min-height: 240px;
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: var(--color-beige2);
+}
+
+.dashboard-stat strong {
+    margin-top: auto;
+
+    color: var(--color-slateblue);
+
+    font-size: clamp(2rem, 4vw, 4rem);
+    line-height: 1;
+}
+
+.dashboard-stat p {
+    margin-top: 12px;
+
+    color: var(--color-slateblue);
+}
+
+
+/* CONTENT */
+
+.dashboard-content {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+}
+
+.dashboard-panel {
+    min-width: 0;
+}
+
+
+/* PROGRAM */
+
+.dashboard-program {
+    border-top: 2px solid var(--color-black);
+}
+
+.dashboard-program-item {
+    padding: 24px 0;
+
+    display: grid;
+    grid-template-columns: 50px 1fr;
+
+    gap: 24px;
+
+    border-bottom: 1px solid var(--color-gray);
+}
+
+.dashboard-program-item > span {
+    color: var(--color-slatered);
+
+    font-weight: 700;
+}
+
+.dashboard-program-item strong {
+    display: block;
+
+    color: var(--color-slateblue);
+
+    font-size: 20px;
+}
+
+.dashboard-program-item p {
+    margin-top: 4px;
+}
+
+
+/* TABLE */
+
+.dashboard-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
